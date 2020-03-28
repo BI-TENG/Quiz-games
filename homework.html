@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let score = 100;
+        let q1 = prompt("為什麼蚊子喜歡在耳邊嗡嗡叫?\n 1.耳朵溫度比較高\n 2.蚊子喜歡耳屎味");
+        if (q1 === "2") {
+            alert("恭喜答對!!");
+        }
+        else {
+            alert("答錯囉!\n扣20分~再接再厲");
+            score -= 20;
+        }
+
+        let q2 = prompt("台灣本島面積最小的縣是?\n 1.雲林縣 \n 2.新竹縣\n 3.嘉義縣\n 4.彰化縣");
+        if (q2 === "4") {
+            alert("恭喜答對了!!");
+        }
+        else {
+            alert("答錯囉!\n扣20分~再接再厲");
+            score -= 20;
+        }
+
+        let q3 = confirm("大顆番茄是蔬菜");
+        if (!q3) {
+            alert("恭喜答對了!!");
+        }
+        else {
+            alert("答錯囉!\n扣20分~再接再厲");
+            score -= 20;
+        }
+
+        let q4 = confirm("大白鯊會停下來休息");
+        if (!q4) {
+            alert("恭喜答對了!!");
+        }
+        else {
+            alert("答錯囉!\n扣20分~再接再厲");
+            score -= 20;
+        }
+
+        let q5 = confirm("娃娃魚不是魚類")
+        if (q5) {
+            alert("恭喜答對了!!");
+        }
+        else {
+            alert("答錯囉!\n扣20分~");
+            score -= 20;
+        }
+        alert(`Game Over!\n你的分數為 ${score}`);
+
+
+    </script>
+</body>
+
+</html>
